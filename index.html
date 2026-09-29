@@ -154,6 +154,19 @@ const COLORS = ['#d9950f', '#3b6fd8', '#c2393f', '#1f8a53', '#8a4fd1', '#12a0a8'
 const STORE = 'box-office-league-v1';
 // Hollywood rule of thumb: a film needs ~2.5x its production budget to break even, once marketing and distribution are factored in.
 const BREAKEVEN_MULTIPLIER = 2.5;
+
+// Fill these in from console.firebase.google.com -> your project -> Project settings -> Your apps -> Web app,
+// to turn on live shared leagues. Left as-is, the app just works locally like before.
+const FIREBASE_CONFIG = {
+  apiKey: 'PASTE_ME',
+  authDomain: 'PASTE_ME',
+  databaseURL: 'PASTE_ME',
+  projectId: 'PASTE_ME',
+};
+// If Firebase changes their CDN module version and live sync stops loading, bump this from
+// https://firebase.google.com/docs/web/setup#available-libraries
+const FIREBASE_SDK_VERSION = '10.12.2';
+const firebaseConfigured = () => FIREBASE_CONFIG.apiKey && FIREBASE_CONFIG.apiKey !== 'PASTE_ME';
 const uid = () => Math.random().toString(36).slice(2, 10);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const money = m => ((Number(m) || 0) < 0 ? '−$' : '$') + Math.abs(Number(m) || 0).toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + 'M';
@@ -248,8 +261,77 @@ let league, ui = { season: 'winter', view: 'draft', q: '' };
 function load() {
   try { const raw = localStorage.getItem(STORE); if (raw) { const d = JSON.parse(raw); league = d.league; ui = { ...ui, ...d.ui, q: '' }; } } catch (e) {}
   if (!league || !league.seasons || (league.demo && !ui.keepDemo)) { league = league2027(); ui.season = 'winter'; ui.view = 'draft'; ui.draftMode = null; }
+  const joinId = new URL(location.href).searchParams.get('league');
+  if (joinId && firebaseConfigured()) league.shareId = joinId;
 }
-function save() { try { localStorage.setItem(STORE, JSON.stringify({ league, ui: { season: ui.season, view: ui.view, keepDemo: !!league.demo } })); } catch (e) {} }
+function save() {
+  try { localStorage.setItem(STORE, JSON.stringify({ league, ui: { season: ui.season, view: ui.view, keepDemo: !!league.demo } })); } catch (e) {}
+  if (syncing && !applyingRemote) { clearTimeout(writeTimer); writeTimer = setTimeout(pushLive, 400); }
+}
+
+/* ---------- Live sync (Firebase Realtime Database) ----------
+   One league = one JSON document at leagues/<shareId>, same shape as what's saved
+   locally. Anyone with the link (the shareId) can read and write it; there are no
+   accounts, matching the "share a code" trust model this already used, just live. */
+let fb = null, liveRef = null, syncing = false, applyingRemote = false, writeTimer = null;
+
+async function firebaseInit() {
+  if (fb) return fb;
+  const { initializeApp } = await import(`https://www.gstatic.com/firebasejs/${FIREBASE_SDK_VERSION}/firebase-app.js`);
+  const { getDatabase, ref, set, onValue, off } = await import(`https://www.gstatic.com/firebasejs/${FIREBASE_SDK_VERSION}/firebase-database.js`);
+  const app = initializeApp(FIREBASE_CONFIG);
+  fb = { db: getDatabase(app), ref, set, onValue, off };
+  return fb;
+}
+
+const leagueUrl = id => { const u = new URL(location.href); u.searchParams.set('league', id); return u.toString(); };
+
+function disconnectLive() {
+  if (liveRef && fb) fb.off(liveRef);
+  liveRef = null; syncing = false;
+}
+
+async function subscribeLive(id) {
+  try {
+    const { db, ref, onValue } = await firebaseInit();
+    liveRef = ref(db, 'leagues/' + id);
+    syncing = true;
+    onValue(liveRef, snap => {
+      const remote = snap.val();
+      if (!remote) return; // nothing written for this id yet
+      applyingRemote = true;
+      league = remote;
+      localStorage.setItem(STORE, JSON.stringify({ league, ui: { season: ui.season, view: ui.view, keepDemo: !!league.demo } }));
+      const a = document.activeElement, typing = a && (a.tagName === 'INPUT' || a.tagName === 'TEXTAREA');
+      if (!typing) render();
+      applyingRemote = false;
+    });
+  } catch (e) { toast('Could not connect to the live league. Check the Firebase config.'); }
+}
+
+async function pushLive() {
+  if (!syncing || !league.shareId) return;
+  try { const { db, ref, set } = await firebaseInit(); await set(ref(db, 'leagues/' + league.shareId), league); }
+  catch (e) { toast('Live sync failed — check your connection.'); }
+}
+
+async function startSharing() {
+  const id = league.shareId || uid() + uid();
+  league.shareId = id;
+  history.replaceState(null, '', leagueUrl(id));
+  await subscribeLive(id);
+  await pushLive();
+  save(); render();
+  toast('League is now live. Share the link with your group.');
+}
+
+function stopSharing() {
+  disconnectLive();
+  delete league.shareId;
+  history.replaceState(null, '', location.pathname);
+  save(); render();
+  toast('Stopped live syncing. This browser keeps its own copy.');
+}
 
 let toastTimer;
 function toast(msg) {
@@ -311,7 +393,7 @@ function render() {
 
 function renderMarquee() {
   document.getElementById('marquee').innerHTML = `<div class="marquee-row">
-    <div><div class="eyebrow">Fantasy box office · ${esc(league.year)} · Profit on ${esc(league.basis.toLowerCase())} gross · <a href="watch-time.html" style="color:inherit">Watch time</a></div><h1>${esc(league.name)}</h1></div>
+    <div><div class="eyebrow">Fantasy box office · ${esc(league.year)} · Profit on ${esc(league.basis.toLowerCase())} gross · <a href="watch-time.html" style="color:inherit">Watch time</a>${syncing ? ' · <span class="chip live">Live</span>' : ''}</div><h1>${esc(league.name)}</h1></div>
     <div class="seasons">${SEASONS.map(s => `<button data-act="season" data-k="${s.key}" aria-pressed="${ui.season === s.key}">${s.name}<span>${s.months}</span></button>`).join('')}</div>
   </div>`;
 }
@@ -528,8 +610,18 @@ function viewLeague() {
     <div class="row"><button class="btn ghost" data-act="load-demo">View the 2024 demo</button><span class="small muted">A finished example season. Replaces this league.</span></div>
     <div class="row"><button class="btn accent" data-act="new-league">Start a new league</button><span class="small muted">Clears everything and sets up 2027 with 6 studios and the announced slates.</span></div>
   </section>
-  <section class="panel"><h2>Share the league</h2>
-    <p class="small" style="margin:0">The league lives in this browser. To give other players the current standings, copy the league code and send it to them. They paste it below and choose Load league.</p>
+  <section class="panel"><h2>Share the league — live</h2>
+    ${!firebaseConfigured() ? `<p class="small muted" style="margin:0">Live sync isn't set up. Fill in <code>FIREBASE_CONFIG</code> near the top of index.html (see the comment above it) to turn this on.</p>`
+      : league.shareId ? `
+      <p class="small" style="margin:0">This league is live. Everyone who opens the link below sees the same studios, drafts and grosses, updating in real time.</p>
+      <div class="row"><input readonly value="${esc(leagueUrl(league.shareId))}" style="flex:1 1 260px" onclick="this.select()" aria-label="Shareable league link"><button class="btn sm" data-act="copy-link">Copy link</button></div>
+      <div class="row"><button class="btn sm danger" data-act="stop-sharing">Stop live syncing</button><span class="small muted">Keeps this browser's copy; everyone else keeps whatever they last saw.</span></div>`
+      : `
+      <p class="small" style="margin:0">Turn this league into a live link. Everyone who opens it sees the same draft board and leaderboard, updating in real time — no more re-sending codes.</p>
+      <div class="row"><button class="btn accent sm" data-act="start-sharing">Start a shared league</button></div>`}
+  </section>
+  <section class="panel"><h2>Share the league — manual code</h2>
+    <p class="small" style="margin:0">A one-time snapshot instead of live sync: copy the league code and send it to someone, they paste it below and choose Load league.</p>
     <textarea id="export" rows="4" readonly>${esc(exportText)}</textarea>
     <div class="row"><button class="btn sm" data-act="copy">Copy league code</button></div>
     <label class="label" for="import">Paste a league code</label>
@@ -551,6 +643,8 @@ function viewLeague() {
 
 /* ---------- Actions ---------- */
 function newLeague() {
+  disconnectLive();
+  history.replaceState(null, '', location.pathname);
   league = league2027();
   ui.draftMode = null; ui.season = 'winter'; ui.view = 'draft';
 }
@@ -637,6 +731,7 @@ document.addEventListener('click', e => {
       league.studios = league.studios.filter(x => x.id !== id); break;
     }
     case 'load-demo': if (!confirmed('demo', b, 'Click again to replace this league')) return;
+      disconnectLive(); history.replaceState(null, '', location.pathname);
       league = demoLeague(); ui.season = 'summer'; ui.view = 'standings'; ui.draftMode = null; break;
     case 'dismiss-preset': league.preset = false; break;
     case 'new-league': if (!confirmed('new', b, 'Click again to clear everything')) return;
@@ -650,9 +745,17 @@ document.addEventListener('click', e => {
       try {
         const d = JSON.parse(document.getElementById('import').value);
         if (!d.studios || !d.seasons) throw 0;
+        disconnectLive(); history.replaceState(null, '', location.pathname);
+        delete d.shareId;
         league = d; ui.draftMode = null; toast('League loaded.'); ui.view = 'standings';
       } catch (err) { toast("That code isn't a valid league. Copy the whole code and try again."); return; }
       break;
+    }
+    case 'start-sharing': startSharing(); return;
+    case 'stop-sharing': stopSharing(); return;
+    case 'copy-link': {
+      navigator.clipboard.writeText(leagueUrl(league.shareId)).then(() => toast('Link copied.'), () => toast('Copy failed — copy the link text manually.'));
+      return;
     }
     case 'tmdb-import': tmdbImport(); return;
     case 'tmdb-refresh': tmdbRefresh(); return;
@@ -698,6 +801,7 @@ document.addEventListener('input', e => {
 document.addEventListener('change', e => { if (e.target.dataset.gross || e.target.dataset.budget || e.target.dataset.league === 'basis') render(); });
 
 load(); render();
+if (league.shareId && firebaseConfigured()) subscribeLive(league.shareId);
 })();
 </script>
 </body>
