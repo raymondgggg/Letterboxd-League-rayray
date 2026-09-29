@@ -302,11 +302,13 @@ async function subscribeLive(id) {
     liveRef = ref(db, 'leagues/' + id);
     syncing = true;
     onValue(liveRef, snap => {
-      const remote = snap.val();
-      if (!remote) return; // nothing written for this id yet
-      const json = JSON.stringify(remote);
-      if (json === lastSynced) return; // just the echo of our own write, not a real change
-      lastSynced = json;
+      // Stored (and read back) as a JSON string, not a nested object: Realtime Database silently
+      // drops empty arrays/objects from nested values (a fresh league's order:[] and picks:[]
+      // vanish entirely), which corrupted every screen that expects those fields to exist.
+      const raw = snap.val();
+      if (!raw || raw === lastSynced) return; // nothing written yet, or just our own echo
+      let remote; try { remote = JSON.parse(raw); } catch (e) { return; }
+      lastSynced = raw;
       applyingRemote = true;
       league = remote;
       localStorage.setItem(STORE, JSON.stringify({ league, ui: { season: ui.season, view: ui.view, keepDemo: !!league.demo } }));
@@ -321,7 +323,7 @@ async function pushLive() {
   if (!syncing || !league.shareId) return;
   const json = JSON.stringify(league);
   if (json === lastSynced) return; // nothing's changed since the last sync
-  try { const { db, ref, set } = await firebaseInit(); await set(ref(db, 'leagues/' + league.shareId), league); lastSynced = json; }
+  try { const { db, ref, set } = await firebaseInit(); await set(ref(db, 'leagues/' + league.shareId), json); lastSynced = json; }
   catch (e) { toast('Live sync failed — check your connection.'); }
 }
 
