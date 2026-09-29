@@ -266,14 +266,19 @@ function load() {
 }
 function save() {
   try { localStorage.setItem(STORE, JSON.stringify({ league, ui: { season: ui.season, view: ui.view, keepDemo: !!league.demo } })); } catch (e) {}
-  if (syncing && !applyingRemote) { clearTimeout(writeTimer); writeTimer = setTimeout(pushLive, 400); }
+  // Only worth a network round-trip (and the re-render it triggers on every synced browser) if the
+  // league itself changed — a lot of save() calls are purely local UI state like switching tabs.
+  if (syncing && !applyingRemote) {
+    const json = JSON.stringify(league);
+    if (json !== lastSynced) { clearTimeout(writeTimer); writeTimer = setTimeout(pushLive, 400); }
+  }
 }
 
 /* ---------- Live sync (Firebase Realtime Database) ----------
    One league = one JSON document at leagues/<shareId>, same shape as what's saved
    locally. Anyone with the link (the shareId) can read and write it; there are no
    accounts, matching the "share a code" trust model this already used, just live. */
-let fb = null, liveRef = null, syncing = false, applyingRemote = false, writeTimer = null;
+let fb = null, liveRef = null, syncing = false, applyingRemote = false, writeTimer = null, lastSynced = null;
 
 async function firebaseInit() {
   if (fb) return fb;
@@ -299,6 +304,9 @@ async function subscribeLive(id) {
     onValue(liveRef, snap => {
       const remote = snap.val();
       if (!remote) return; // nothing written for this id yet
+      const json = JSON.stringify(remote);
+      if (json === lastSynced) return; // just the echo of our own write, not a real change
+      lastSynced = json;
       applyingRemote = true;
       league = remote;
       localStorage.setItem(STORE, JSON.stringify({ league, ui: { season: ui.season, view: ui.view, keepDemo: !!league.demo } }));
@@ -311,7 +319,9 @@ async function subscribeLive(id) {
 
 async function pushLive() {
   if (!syncing || !league.shareId) return;
-  try { const { db, ref, set } = await firebaseInit(); await set(ref(db, 'leagues/' + league.shareId), league); }
+  const json = JSON.stringify(league);
+  if (json === lastSynced) return; // nothing's changed since the last sync
+  try { const { db, ref, set } = await firebaseInit(); await set(ref(db, 'leagues/' + league.shareId), league); lastSynced = json; }
   catch (e) { toast('Live sync failed — check your connection.'); }
 }
 
