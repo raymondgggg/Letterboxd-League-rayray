@@ -8,7 +8,7 @@ A fantasy box office game. Each player runs an imaginary studio, drafts real wid
   - **Bomb pick**: its profit or loss is added to every *other* studio's total. Pick the film you expect to flop.
   Hit and bomb picks are off the board for the season drafts.
 - Right before each season, the league builds a slate of that season's wide releases and runs a **snake draft**.
-- Enter each film's production budget, then its domestic (or worldwide) gross as it comes in. Profit = gross − budget.
+- Enter each film's production budget, then its domestic (or worldwide) gross as it comes in. To account for marketing and distribution costs, break-even is set at 2.5x the reported production budget (the traditional Hollywood rule of thumb) — profit = gross − (budget × 2.5).
 - Leaderboards rank studios by the combined profit of their films. The most profitable studio wins each season; the year winner has the highest total of all three seasons, their hit pick, and their rivals' bomb picks.
 
 ## 2027 season
