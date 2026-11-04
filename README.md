@@ -26,9 +26,8 @@ Optional: add a free [TMDB](https://www.themoviedb.org/) API key on the League t
 
 `watch-time.html` tracks how much time each member of a Letterboxd league spends watching films. The site links to it from the Box Office League header.
 
-- **Month**: leaderboard ranked by the total runtime of films each member logged that month, with film and rewatch counts and the change from last month.
-- **Year**: year-to-date standings, a month-by-month heatmap of hours, and each month's winner.
-- **Diary**: every logged film for the month, filterable by member.
+- **Month**: leaderboard for the current month, ranked by the total runtime of films each member logged, with film and rewatch counts, average film runtime and the change from last month. Summary boxes show the league total, the leader, the lead over 2nd place, the marathon day (most time one member logged in a single day), the oldest film and the longest film, with posters for the films. It always shows the current month.
+- **Members & setup**: each member's sync status.
 
 Watch time for a month is the sum of runtimes of the films a member logged in their Letterboxd diary with a watched date in that month. Rewatches count. Films logged without a date don't.
 
