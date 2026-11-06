@@ -1,43 +1,58 @@
 {
-  "updated": "2026-11-05T22:08:47.002Z",
+  "updated": "2026-11-06T09:42:55.426Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-05T22:08:40.201Z"
+      "lastFetched": "2026-11-06T09:42:49.123Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-05T22:08:41.083Z"
+      "lastFetched": "2026-11-06T09:42:50.003Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-05T22:08:41.965Z"
+      "lastFetched": "2026-11-06T09:42:50.876Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-05T22:08:42.851Z"
+      "lastFetched": "2026-11-06T09:42:51.746Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-05T22:08:43.754Z"
+      "lastFetched": "2026-11-06T09:42:52.622Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-05T22:08:44.686Z"
+      "lastFetched": "2026-11-06T09:42:53.517Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-05T22:08:45.750Z"
+      "lastFetched": "2026-11-06T09:42:54.620Z"
     }
   ],
   "entries": [
+    {
+      "id": "letterboxd-review-1574008150",
+      "user": "mr_n00dl3s",
+      "date": "2026-11-05",
+      "title": "Nine to Five",
+      "year": 1980,
+      "slug": "nine-to-five",
+      "tmdb": "19494",
+      "rewatch": false,
+      "rating": 4,
+      "link": "https://letterboxd.com/mr_n00dl3s/film/nine-to-five/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/3/9/6/1/1/39611-nine-to-five-0-600-0-900-crop.jpg?v=585e6eeb9e",
+      "logged": "2026-11-06T04:05:16.000Z",
+      "runtime": 110
+    },
     {
       "id": "letterboxd-review-1572837132",
       "user": "mr_n00dl3s",
