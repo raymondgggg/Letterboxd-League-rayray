@@ -1,40 +1,40 @@
 {
-  "updated": "2026-11-07T14:30:27.268Z",
+  "updated": "2026-11-08T01:51:21.963Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-07T14:30:20.719Z"
+      "lastFetched": "2026-11-08T01:51:15.543Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-07T14:30:21.627Z"
+      "lastFetched": "2026-11-08T01:51:16.443Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-07T14:30:22.548Z"
+      "lastFetched": "2026-11-08T01:51:17.337Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-07T14:30:23.449Z"
+      "lastFetched": "2026-11-08T01:51:18.233Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-07T14:30:24.380Z"
+      "lastFetched": "2026-11-08T01:51:19.139Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-07T14:30:25.335Z"
+      "lastFetched": "2026-11-08T01:51:20.091Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-07T14:30:26.458Z"
+      "lastFetched": "2026-11-08T01:51:21.156Z"
     }
   ],
   "entries": [
@@ -51,6 +51,36 @@
       "link": "https://letterboxd.com/mr_n00dl3s/film/godzilla-minus-zero/1/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/6/6/6/8/4/1266684-godzilla-minus-zero-0-600-0-900-crop.jpg?v=38989be61d",
       "logged": "2026-11-07T10:51:54.000Z",
+      "runtime": 135
+    },
+    {
+      "id": "letterboxd-review-1576687474",
+      "user": "mr_n00dl3s",
+      "date": "2026-11-07",
+      "title": "Godzilla Minus Zero",
+      "year": 2026,
+      "slug": "godzilla-minus-zero",
+      "tmdb": "1381071",
+      "rewatch": true,
+      "rating": 4.5,
+      "link": "https://letterboxd.com/mr_n00dl3s/film/godzilla-minus-zero/2/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/6/6/6/8/4/1266684-godzilla-minus-zero-0-600-0-900-crop.jpg?v=38989be61d",
+      "logged": "2026-11-07T23:29:48.000Z",
+      "runtime": 135
+    },
+    {
+      "id": "letterboxd-review-1576762014",
+      "user": "scottsak",
+      "date": "2026-11-06",
+      "title": "Godzilla Minus Zero",
+      "year": 2026,
+      "slug": "godzilla-minus-zero",
+      "tmdb": "1381071",
+      "rewatch": true,
+      "rating": 3.5,
+      "link": "https://letterboxd.com/scottsak/film/godzilla-minus-zero/1/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/6/6/6/8/4/1266684-godzilla-minus-zero-0-600-0-900-crop.jpg?v=38989be61d",
+      "logged": "2026-11-08T00:12:01.000Z",
       "runtime": 135
     },
     {
