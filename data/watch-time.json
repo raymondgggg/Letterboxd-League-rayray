@@ -1,40 +1,40 @@
 {
-  "updated": "2026-11-09T02:51:40.266Z",
+  "updated": "2026-11-09T10:41:22.019Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-09T02:51:33.297Z"
+      "lastFetched": "2026-11-09T10:41:15.209Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-09T02:51:34.199Z"
+      "lastFetched": "2026-11-09T10:41:16.075Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-09T02:51:35.086Z"
+      "lastFetched": "2026-11-09T10:41:16.938Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-09T02:51:35.988Z"
+      "lastFetched": "2026-11-09T10:41:17.807Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-09T02:51:36.887Z"
+      "lastFetched": "2026-11-09T10:41:18.695Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-09T02:51:37.862Z"
+      "lastFetched": "2026-11-09T10:41:19.622Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-09T02:51:38.919Z"
+      "lastFetched": "2026-11-09T10:41:20.705Z"
     }
   ],
   "entries": [
@@ -52,6 +52,21 @@
       "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/4/5/0/51450-harry-potter-and-the-goblet-of-fire-0-600-0-900-crop.jpg?v=6b5c9896c9",
       "logged": "2026-11-09T00:57:57.000Z",
       "runtime": 157
+    },
+    {
+      "id": "letterboxd-review-1578964264",
+      "user": "tupapi_",
+      "date": "2026-11-08",
+      "title": "Rocky II",
+      "year": 1979,
+      "slug": "rocky-ii",
+      "tmdb": "1367",
+      "rewatch": true,
+      "rating": 3.5,
+      "link": "https://letterboxd.com/tupapi_/film/rocky-ii/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/0/8/9/51089-rocky-ii-0-600-0-900-crop.jpg?v=f7606f9060",
+      "logged": "2026-11-09T04:35:40.000Z",
+      "runtime": 119
     },
     {
       "id": "letterboxd-review-1575741879",
