@@ -1,43 +1,73 @@
 {
-  "updated": "2026-11-09T10:41:22.019Z",
+  "updated": "2026-11-09T21:06:43.017Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-09T10:41:15.209Z"
+      "lastFetched": "2026-11-09T21:06:35.564Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-09T10:41:16.075Z"
+      "lastFetched": "2026-11-09T21:06:36.435Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-09T10:41:16.938Z"
+      "lastFetched": "2026-11-09T21:06:37.304Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-09T10:41:17.807Z"
+      "lastFetched": "2026-11-09T21:06:38.181Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-09T10:41:18.695Z"
+      "lastFetched": "2026-11-09T21:06:39.067Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-09T10:41:19.622Z"
+      "lastFetched": "2026-11-09T21:06:39.995Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-09T10:41:20.705Z"
+      "lastFetched": "2026-11-09T21:06:41.030Z"
     }
   ],
   "entries": [
+    {
+      "id": "letterboxd-review-1579234493",
+      "user": "kylie_sak",
+      "date": "2026-11-09",
+      "title": "The Cat in the Hat",
+      "year": 2003,
+      "slug": "the-cat-in-the-hat-2003",
+      "tmdb": "10588",
+      "rewatch": false,
+      "rating": 3,
+      "link": "https://letterboxd.com/kylie_sak/film/the-cat-in-the-hat-2003/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/4/6/0/8/4/46084-dr-seuss-the-cat-in-the-hat-0-600-0-900-crop.jpg?v=794f6352e4",
+      "logged": "2026-11-09T10:52:33.000Z",
+      "runtime": 82
+    },
+    {
+      "id": "letterboxd-review-1579233849",
+      "user": "kylie_sak",
+      "date": "2026-11-09",
+      "title": "Horton Hears a Who!",
+      "year": 2008,
+      "slug": "horton-hears-a-who-2008",
+      "tmdb": "12222",
+      "rewatch": false,
+      "rating": 3.5,
+      "link": "https://letterboxd.com/kylie_sak/film/horton-hears-a-who-2008/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/4/4/6/8/7/44687-horton-hears-a-who-2008-0-600-0-900-crop.jpg?v=cd1a527603",
+      "logged": "2026-11-09T10:51:25.000Z",
+      "runtime": 86
+    },
     {
       "id": "letterboxd-review-1578676417",
       "user": "raulypa",
