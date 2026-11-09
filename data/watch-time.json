@@ -1,43 +1,58 @@
 {
-  "updated": "2026-11-08T08:20:07.306Z",
+  "updated": "2026-11-09T02:51:40.266Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-08T08:20:00.297Z"
+      "lastFetched": "2026-11-09T02:51:33.297Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-08T08:20:01.196Z"
+      "lastFetched": "2026-11-09T02:51:34.199Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-08T08:20:02.093Z"
+      "lastFetched": "2026-11-09T02:51:35.086Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-08T08:20:02.990Z"
+      "lastFetched": "2026-11-09T02:51:35.988Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-08T08:20:03.895Z"
+      "lastFetched": "2026-11-09T02:51:36.887Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-08T08:20:04.833Z"
+      "lastFetched": "2026-11-09T02:51:37.862Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-08T08:20:05.940Z"
+      "lastFetched": "2026-11-09T02:51:38.919Z"
     }
   ],
   "entries": [
+    {
+      "id": "letterboxd-review-1578676417",
+      "user": "raulypa",
+      "date": "2026-11-08",
+      "title": "Harry Potter and the Goblet of Fire",
+      "year": 2005,
+      "slug": "harry-potter-and-the-goblet-of-fire",
+      "tmdb": "674",
+      "rewatch": true,
+      "rating": 5,
+      "link": "https://letterboxd.com/raulypa/film/harry-potter-and-the-goblet-of-fire/1/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/4/5/0/51450-harry-potter-and-the-goblet-of-fire-0-600-0-900-crop.jpg?v=6b5c9896c9",
+      "logged": "2026-11-09T00:57:57.000Z",
+      "runtime": 157
+    },
     {
       "id": "letterboxd-review-1575741879",
       "user": "mr_n00dl3s",
@@ -2357,7 +2372,7 @@
       "slug": "ghost-in-the-shell",
       "tmdb": "9323",
       "rewatch": true,
-      "rating": 4,
+      "rating": 4.5,
       "link": "https://letterboxd.com/mr_n00dl3s/film/ghost-in-the-shell/",
       "poster": "https://a.ltrbxd.com/resized/film-poster/4/7/2/7/0/47270-ghost-in-the-shell-0-600-0-900-crop.jpg?v=c837d80ee1",
       "runtime": 83,
