@@ -1,43 +1,58 @@
 {
-  "updated": "2026-11-09T21:06:43.017Z",
+  "updated": "2026-11-12T01:36:25.148Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-09T21:06:35.564Z"
+      "lastFetched": "2026-11-12T01:36:18.604Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-09T21:06:36.435Z"
+      "lastFetched": "2026-11-12T01:36:19.505Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-09T21:06:37.304Z"
+      "lastFetched": "2026-11-12T01:36:20.397Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-09T21:06:38.181Z"
+      "lastFetched": "2026-11-12T01:36:21.277Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-09T21:06:39.067Z"
+      "lastFetched": "2026-11-12T01:36:22.208Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-09T21:06:39.995Z"
+      "lastFetched": "2026-11-12T01:36:23.191Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-09T21:06:41.030Z"
+      "lastFetched": "2026-11-12T01:36:24.340Z"
     }
   ],
   "entries": [
+    {
+      "id": "letterboxd-watch-1582813583",
+      "user": "scottsak",
+      "date": "2026-11-10",
+      "title": "Love of Your Life",
+      "year": 2026,
+      "slug": "love-of-your-life",
+      "tmdb": "1381078",
+      "rewatch": false,
+      "rating": 4,
+      "link": "https://letterboxd.com/scottsak/film/love-of-your-life/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/2/6/6/9/2/2/1266922-love-of-your-life-0-600-0-900-crop.jpg?v=7a6d5c6675",
+      "logged": "2026-11-11T23:52:13.000Z",
+      "runtime": 109
+    },
     {
       "id": "letterboxd-review-1579234493",
       "user": "kylie_sak",
