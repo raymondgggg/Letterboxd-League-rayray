@@ -1,43 +1,58 @@
 {
-  "updated": "2026-11-17T08:01:55.991Z",
+  "updated": "2026-11-18T22:58:10.218Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-17T08:01:49.004Z"
+      "lastFetched": "2026-11-18T22:58:03.210Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-17T08:01:49.891Z"
+      "lastFetched": "2026-11-18T22:58:04.099Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-17T08:01:50.773Z"
+      "lastFetched": "2026-11-18T22:58:05.009Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-17T08:01:51.659Z"
+      "lastFetched": "2026-11-18T22:58:05.918Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-17T08:01:52.556Z"
+      "lastFetched": "2026-11-18T22:58:06.823Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-17T08:01:53.500Z"
+      "lastFetched": "2026-11-18T22:58:07.777Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-17T08:01:54.592Z"
+      "lastFetched": "2026-11-18T22:58:08.860Z"
     }
   ],
   "entries": [
+    {
+      "id": "letterboxd-review-1592555024",
+      "user": "tupapi_",
+      "date": "2026-11-18",
+      "title": "Rocky IV",
+      "year": 1985,
+      "slug": "rocky-iv",
+      "tmdb": "1374",
+      "rewatch": false,
+      "rating": 3.5,
+      "link": "https://letterboxd.com/tupapi_/film/rocky-iv/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/0/8/2/51082-rocky-iv-0-600-0-900-crop.jpg?v=ffedb5ed03",
+      "logged": "2026-11-18T20:50:51.000Z",
+      "runtime": 91
+    },
     {
       "id": "letterboxd-review-1590612518",
       "user": "mr_n00dl3s",
