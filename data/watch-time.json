@@ -1,40 +1,40 @@
 {
-  "updated": "2026-11-19T12:55:23.358Z",
+  "updated": "2026-11-19T21:13:46.506Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-19T12:55:16.361Z"
+      "lastFetched": "2026-11-19T21:13:38.976Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-19T12:55:17.244Z"
+      "lastFetched": "2026-11-19T21:13:39.930Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-19T12:55:18.133Z"
+      "lastFetched": "2026-11-19T21:13:40.914Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-19T12:55:19.032Z"
+      "lastFetched": "2026-11-19T21:13:41.869Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-19T12:55:19.934Z"
+      "lastFetched": "2026-11-19T21:13:42.853Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-19T12:55:20.947Z"
+      "lastFetched": "2026-11-19T21:13:43.899Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-19T12:55:22.027Z"
+      "lastFetched": "2026-11-19T21:13:45.085Z"
     }
   ],
   "entries": [
@@ -52,6 +52,21 @@
       "poster": "https://a.ltrbxd.com/resized/sm/upload/16/v3/46/iu/slNJESItHPqp1CENEJQUPw8d7WE-0-600-0-900-crop.jpg?v=55162bb367",
       "logged": "2026-11-19T08:00:52.000Z",
       "runtime": 183
+    },
+    {
+      "id": "letterboxd-review-1593680299",
+      "user": "mr_n00dl3s",
+      "date": "2026-11-18",
+      "title": "Fury",
+      "year": 2014,
+      "slug": "fury-2014",
+      "tmdb": "228150",
+      "rewatch": false,
+      "rating": 4,
+      "link": "https://letterboxd.com/mr_n00dl3s/film/fury-2014/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/6/0/4/9/7/160497-fury-0-600-0-900-crop.jpg?v=e213dcfd19",
+      "logged": "2026-11-19T18:56:34.000Z",
+      "runtime": 135
     },
     {
       "id": "letterboxd-review-1593177699",
