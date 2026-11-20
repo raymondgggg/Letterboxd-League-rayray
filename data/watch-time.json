@@ -1,40 +1,40 @@
 {
-  "updated": "2026-11-19T21:13:46.506Z",
+  "updated": "2026-11-20T10:17:36.360Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-19T21:13:38.976Z"
+      "lastFetched": "2026-11-20T10:17:29.544Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-19T21:13:39.930Z"
+      "lastFetched": "2026-11-20T10:17:30.423Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-19T21:13:40.914Z"
+      "lastFetched": "2026-11-20T10:17:31.301Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-19T21:13:41.869Z"
+      "lastFetched": "2026-11-20T10:17:32.177Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-19T21:13:42.853Z"
+      "lastFetched": "2026-11-20T10:17:33.079Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-19T21:13:43.899Z"
+      "lastFetched": "2026-11-20T10:17:34.012Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-19T21:13:45.085Z"
+      "lastFetched": "2026-11-20T10:17:35.095Z"
     }
   ],
   "entries": [
@@ -52,6 +52,21 @@
       "poster": "https://a.ltrbxd.com/resized/sm/upload/16/v3/46/iu/slNJESItHPqp1CENEJQUPw8d7WE-0-600-0-900-crop.jpg?v=55162bb367",
       "logged": "2026-11-19T08:00:52.000Z",
       "runtime": 183
+    },
+    {
+      "id": "letterboxd-review-1594399235",
+      "user": "skinklevro",
+      "date": "2026-11-19",
+      "title": "The Hunger Games: Sunrise on the Reaping",
+      "year": 2026,
+      "slug": "the-hunger-games-sunrise-on-the-reaping",
+      "tmdb": "1300968",
+      "rewatch": false,
+      "rating": 4.5,
+      "link": "https://letterboxd.com/skinklevro/film/the-hunger-games-sunrise-on-the-reaping/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/8/2/6/9/2/1182692-the-hunger-games-sunrise-on-the-reaping-0-600-0-900-crop.jpg?v=91001efc76",
+      "logged": "2026-11-20T06:22:17.000Z",
+      "runtime": 159
     },
     {
       "id": "letterboxd-review-1593680299",
