@@ -1,43 +1,58 @@
 {
-  "updated": "2026-11-20T10:17:36.360Z",
+  "updated": "2026-11-21T21:04:19.553Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-20T10:17:29.544Z"
+      "lastFetched": "2026-11-21T21:03:58.381Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-20T10:17:30.423Z"
+      "lastFetched": "2026-11-21T21:04:03.922Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-20T10:17:31.301Z"
+      "lastFetched": "2026-11-21T21:04:14.440Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-20T10:17:32.177Z"
+      "lastFetched": "2026-11-21T21:04:15.581Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-20T10:17:33.079Z"
+      "lastFetched": "2026-11-21T21:04:16.530Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-20T10:17:34.012Z"
+      "lastFetched": "2026-11-21T21:04:17.604Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-20T10:17:35.095Z"
+      "lastFetched": "2026-11-21T21:04:18.745Z"
     }
   ],
   "entries": [
+    {
+      "id": "letterboxd-review-1596504570",
+      "user": "scottsak",
+      "date": "2026-11-20",
+      "title": "Eternity",
+      "year": 2025,
+      "slug": "eternity-2025-1",
+      "tmdb": "1259102",
+      "rewatch": true,
+      "rating": 5,
+      "link": "https://letterboxd.com/scottsak/film/eternity-2025-1/7/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/1/1/4/3/3/9/0/1143390-eternity-2025-1-0-600-0-900-crop.jpg?v=adc98f0553",
+      "logged": "2026-11-21T18:55:28.000Z",
+      "runtime": 114
+    },
     {
       "id": "letterboxd-review-1593216400",
       "user": "scottsak",
