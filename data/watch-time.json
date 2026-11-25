@@ -1,43 +1,73 @@
 {
-  "updated": "2026-11-25T01:38:39.428Z",
+  "updated": "2026-11-25T10:29:54.614Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-25T01:38:33.003Z"
+      "lastFetched": "2026-11-25T10:29:46.915Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-25T01:38:33.912Z"
+      "lastFetched": "2026-11-25T10:29:47.869Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-25T01:38:34.805Z"
+      "lastFetched": "2026-11-25T10:29:48.816Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-25T01:38:35.712Z"
+      "lastFetched": "2026-11-25T10:29:49.759Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-25T01:38:36.627Z"
+      "lastFetched": "2026-11-25T10:29:50.705Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-25T01:38:37.566Z"
+      "lastFetched": "2026-11-25T10:29:51.684Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-25T01:38:38.618Z"
+      "lastFetched": "2026-11-25T10:29:52.751Z"
     }
   ],
   "entries": [
+    {
+      "id": "letterboxd-review-1601944957",
+      "user": "scottsak",
+      "date": "2026-11-24",
+      "title": "Juno",
+      "year": 2007,
+      "slug": "juno",
+      "tmdb": "7326",
+      "rewatch": false,
+      "rating": 3.5,
+      "link": "https://letterboxd.com/scottsak/film/juno/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/4/8/0/5/1/48051-juno-0-600-0-900-crop.jpg?v=19ad3fb7e5",
+      "logged": "2026-11-25T05:33:42.000Z",
+      "runtime": 96
+    },
+    {
+      "id": "letterboxd-review-1601838555",
+      "user": "scottsak",
+      "date": "2026-11-24",
+      "title": "Kubo and the Two Strings",
+      "year": 2016,
+      "slug": "kubo-and-the-two-strings",
+      "tmdb": "313297",
+      "rewatch": false,
+      "rating": 3.5,
+      "link": "https://letterboxd.com/scottsak/film/kubo-and-the-two-strings/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/2/4/0/0/6/8/240068-kubo-and-the-two-strings-0-600-0-900-crop.jpg?v=0ff2eecb8b",
+      "logged": "2026-11-25T03:42:25.000Z",
+      "runtime": 102
+    },
     {
       "id": "letterboxd-review-1599540344",
       "user": "kylie_sak",
