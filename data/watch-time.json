@@ -1,43 +1,58 @@
 {
-  "updated": "2026-11-26T11:40:34.213Z",
+  "updated": "2026-11-26T20:33:42.514Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-26T11:40:27.800Z"
+      "lastFetched": "2026-11-26T20:33:35.167Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-26T11:40:28.706Z"
+      "lastFetched": "2026-11-26T20:33:36.100Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-26T11:40:29.608Z"
+      "lastFetched": "2026-11-26T20:33:37.053Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-26T11:40:30.510Z"
+      "lastFetched": "2026-11-26T20:33:38.036Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-26T11:40:31.421Z"
+      "lastFetched": "2026-11-26T20:33:38.965Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-26T11:40:32.357Z"
+      "lastFetched": "2026-11-26T20:33:39.935Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-26T11:40:33.405Z"
+      "lastFetched": "2026-11-26T20:33:41.109Z"
     }
   ],
   "entries": [
+    {
+      "id": "letterboxd-review-1603491955",
+      "user": "mr_n00dl3s",
+      "date": "2026-11-25",
+      "title": "Some Like It Hot",
+      "year": 1959,
+      "slug": "some-like-it-hot",
+      "tmdb": "239",
+      "rewatch": false,
+      "rating": 4.5,
+      "link": "https://letterboxd.com/mr_n00dl3s/film/some-like-it-hot/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/5/1/8/1/7/51817-some-like-it-hot-0-600-0-900-crop.jpg?v=fc0b1b87eb",
+      "logged": "2026-11-26T12:11:10.000Z",
+      "runtime": 123
+    },
     {
       "id": "letterboxd-review-1603300039",
       "user": "raulypa",
