@@ -1,43 +1,58 @@
 {
-  "updated": "2026-11-25T10:29:54.614Z",
+  "updated": "2026-11-26T11:40:34.213Z",
   "members": [
     {
       "username": "raulypa",
       "name": "raulypa",
-      "lastFetched": "2026-11-25T10:29:46.915Z"
+      "lastFetched": "2026-11-26T11:40:27.800Z"
     },
     {
       "username": "da_rayray",
       "name": "da_rayray",
-      "lastFetched": "2026-11-25T10:29:47.869Z"
+      "lastFetched": "2026-11-26T11:40:28.706Z"
     },
     {
       "username": "tupapi_",
       "name": "tupapi_",
-      "lastFetched": "2026-11-25T10:29:48.816Z"
+      "lastFetched": "2026-11-26T11:40:29.608Z"
     },
     {
       "username": "kylie_sak",
       "name": "ky",
-      "lastFetched": "2026-11-25T10:29:49.759Z"
+      "lastFetched": "2026-11-26T11:40:30.510Z"
     },
     {
       "username": "skinklevro",
       "name": "skinklevro",
-      "lastFetched": "2026-11-25T10:29:50.705Z"
+      "lastFetched": "2026-11-26T11:40:31.421Z"
     },
     {
       "username": "scottsak",
       "name": "scottsak",
-      "lastFetched": "2026-11-25T10:29:51.684Z"
+      "lastFetched": "2026-11-26T11:40:32.357Z"
     },
     {
       "username": "mr_n00dl3s",
       "name": "mr_n00dl3s",
-      "lastFetched": "2026-11-25T10:29:52.751Z"
+      "lastFetched": "2026-11-26T11:40:33.405Z"
     }
   ],
   "entries": [
+    {
+      "id": "letterboxd-review-1603300039",
+      "user": "raulypa",
+      "date": "2026-11-25",
+      "title": "The Irishman",
+      "year": 2019,
+      "slug": "the-irishman-2019",
+      "tmdb": "398978",
+      "rewatch": true,
+      "rating": 4.5,
+      "link": "https://letterboxd.com/raulypa/film/the-irishman-2019/",
+      "poster": "https://a.ltrbxd.com/resized/film-poster/3/3/3/2/0/3/333203-the-irishman-0-600-0-900-crop.jpg?v=44b0138d78",
+      "logged": "2026-11-26T06:33:59.000Z",
+      "runtime": 209
+    },
     {
       "id": "letterboxd-review-1601944957",
       "user": "scottsak",
